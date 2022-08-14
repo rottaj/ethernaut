@@ -1,0 +1,139 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/evil_computer/fun/ethernaut/contracts/CoinFlip.sol": {
+      "lastModificationDate": 1660449052938,
+      "contentHash": "9d3cf1222871280a861be8407350e618",
+      "sourceName": "contracts/CoinFlip.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "CoinFlip",
+        "ICoinFlip"
+      ]
+    },
+    "/Users/evil_computer/fun/ethernaut/contracts/fallback.sol": {
+      "lastModificationDate": 1660437617712,
+      "contentHash": "7035c2a0f0c438447a5779d3db8ec0d9",
+      "sourceName": "contracts/fallback.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
+    },
+    "/Users/evil_computer/fun/ethernaut/contracts/levels/01_Fallback.sol": {
+      "lastModificationDate": 1660437657434,
+      "contentHash": "c38c2499c07eeb00e2cdfb909461af9e",
+      "sourceName": "contracts/levels/01_Fallback.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
+    },
+    "/Users/evil_computer/fun/ethernaut/contracts/Telephone.sol": {
+      "lastModificationDate": 1660451600388,
+      "contentHash": "80764c247eb6005c7370b453cc9854b1",
+      "sourceName": "contracts/Telephone.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "ITelephone",
+        "Telephone"
+      ]
+    }
+  }
+}
