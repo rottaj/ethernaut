@@ -14,9 +14,5 @@ contract Telephone {
     targetContract = ITelephone(targetAddress); 
     targetContract.changeOwner(exitAddress);
   }
-  /*
-  function interact() public {
-    return targetContract.changeOwner(exitAddress);   
-  }
-  */
+
 }
