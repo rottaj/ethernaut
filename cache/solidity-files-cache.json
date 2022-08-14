@@ -175,6 +175,41 @@
         "Delegation",
         "IDelegation"
       ]
+    },
+    "/Users/evil_computer/fun/ethernaut/contracts/Force.sol": {
+      "lastModificationDate": 1660517628161,
+      "contentHash": "df854db95291850f87f2f5cd51ec5a6c",
+      "sourceName": "contracts/Force.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "Force"
+      ]
     }
   }
 }
