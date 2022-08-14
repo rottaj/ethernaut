@@ -3,6 +3,8 @@
 /* eslint-disable */
 import type * as coinFlipSol from "./CoinFlip.sol";
 export type { coinFlipSol };
+import type * as delegationSol from "./Delegation.sol";
+export type { delegationSol };
 import type * as telephoneSol from "./Telephone.sol";
 export type { telephoneSol };
 import type * as tokenSol from "./Token.sol";
@@ -12,6 +14,10 @@ export type { CoinFlip } from "./CoinFlip.sol/CoinFlip";
 export { CoinFlip__factory } from "./factories/CoinFlip.sol/CoinFlip__factory";
 export type { ICoinFlip } from "./CoinFlip.sol/ICoinFlip";
 export { ICoinFlip__factory } from "./factories/CoinFlip.sol/ICoinFlip__factory";
+export type { Delegation } from "./Delegation.sol/Delegation";
+export { Delegation__factory } from "./factories/Delegation.sol/Delegation__factory";
+export type { IDelegation } from "./Delegation.sol/IDelegation";
+export { IDelegation__factory } from "./factories/Delegation.sol/IDelegation__factory";
 export type { ITelephone } from "./Telephone.sol/ITelephone";
 export { ITelephone__factory } from "./factories/Telephone.sol/ITelephone__factory";
 export type { Telephone } from "./Telephone.sol/Telephone";

@@ -37,37 +37,6 @@
         "ICoinFlip"
       ]
     },
-    "/Users/evil_computer/fun/ethernaut/contracts/fallback.sol": {
-      "lastModificationDate": 1660437617712,
-      "contentHash": "7035c2a0f0c438447a5779d3db8ec0d9",
-      "sourceName": "contracts/fallback.sol",
-      "solcConfig": {
-        "version": "0.8.9",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [],
-      "artifacts": []
-    },
     "/Users/evil_computer/fun/ethernaut/contracts/levels/01_Fallback.sol": {
       "lastModificationDate": 1660437657434,
       "contentHash": "c38c2499c07eeb00e2cdfb909461af9e",
@@ -135,37 +104,6 @@
         "Telephone"
       ]
     },
-    "/Users/evil_computer/fun/ethernaut/contracts/FallBack.sol": {
-      "lastModificationDate": 1660452353774,
-      "contentHash": "7035c2a0f0c438447a5779d3db8ec0d9",
-      "sourceName": "contracts/FallBack.sol",
-      "solcConfig": {
-        "version": "0.8.9",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [],
-      "artifacts": []
-    },
     "/Users/evil_computer/fun/ethernaut/contracts/Token.sol": {
       "lastModificationDate": 1660453926085,
       "contentHash": "d8dd12069213208278d3416ae0b1f9df",
@@ -200,6 +138,42 @@
       "artifacts": [
         "IToken",
         "Token"
+      ]
+    },
+    "/Users/evil_computer/fun/ethernaut/contracts/Delegation.sol": {
+      "lastModificationDate": 1660505102857,
+      "contentHash": "ace6d3866cbbcb81788c19ee9c153600",
+      "sourceName": "contracts/Delegation.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "Delegation",
+        "IDelegation"
       ]
     }
   }
