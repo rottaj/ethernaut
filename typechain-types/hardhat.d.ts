@@ -29,9 +29,33 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IDelegation__factory>;
     getContractFactory(
+      name: "Building",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.Building__factory>;
+    getContractFactory(
+      name: "Elevator",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.Elevator__factory>;
+    getContractFactory(
+      name: "IBuilding",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IBuilding__factory>;
+    getContractFactory(
+      name: "IElevator",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IElevator__factory>;
+    getContractFactory(
       name: "Force",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Force__factory>;
+    getContractFactory(
+      name: "IReentrance",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IReentrance__factory>;
+    getContractFactory(
+      name: "Reentrance",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.Reentrance__factory>;
     getContractFactory(
       name: "ITelephone",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -70,10 +94,40 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.IDelegation>;
     getContractAt(
+      name: "Building",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.Building>;
+    getContractAt(
+      name: "Elevator",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.Elevator>;
+    getContractAt(
+      name: "IBuilding",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IBuilding>;
+    getContractAt(
+      name: "IElevator",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IElevator>;
+    getContractAt(
       name: "Force",
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.Force>;
+    getContractAt(
+      name: "IReentrance",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IReentrance>;
+    getContractAt(
+      name: "Reentrance",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.Reentrance>;
     getContractAt(
       name: "ITelephone",
       address: string,
