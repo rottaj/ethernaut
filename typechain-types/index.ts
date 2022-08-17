@@ -25,8 +25,6 @@ export type { IDelegation } from "./Delegation.sol/IDelegation";
 export { IDelegation__factory } from "./factories/Delegation.sol/IDelegation__factory";
 export type { Building } from "./Elevator.sol/Building";
 export { Building__factory } from "./factories/Elevator.sol/Building__factory";
-export type { Elevator } from "./Elevator.sol/Elevator";
-export { Elevator__factory } from "./factories/Elevator.sol/Elevator__factory";
 export type { IBuilding } from "./Elevator.sol/IBuilding";
 export { IBuilding__factory } from "./factories/Elevator.sol/IBuilding__factory";
 export type { IElevator } from "./Elevator.sol/IElevator";

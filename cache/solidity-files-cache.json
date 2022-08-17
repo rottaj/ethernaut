@@ -248,8 +248,8 @@
       ]
     },
     "/Users/evil_computer/fun/ethernaut/contracts/Elevator.sol": {
-      "lastModificationDate": 1660770132576,
-      "contentHash": "f3817d55dc07f749e5d63374873c6a0c",
+      "lastModificationDate": 1660773484228,
+      "contentHash": "ba768684342cc310ff0ecd46865e7c48",
       "sourceName": "contracts/Elevator.sol",
       "solcConfig": {
         "version": "0.8.9",
@@ -279,7 +279,7 @@
         "^0.8.9"
       ],
       "artifacts": [
-        "Elevator",
+        "Building",
         "IBuilding",
         "IElevator"
       ]

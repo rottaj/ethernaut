@@ -1,5 +1,5 @@
 const { ethers } = require("ethers");
-const ElevatorInterface = require("../artifacts/contracts/Elevator.sol/Elevator.json");
+const ElevatorInterface = require("../artifacts/contracts/Elevator.sol/Building.json");
 
 require("dotenv").config()
 
@@ -15,7 +15,8 @@ const main = async() => {
   await ElevatorContract.deployed();
   console.log(ElevatorContract);
   console.log("Deployed", ElevatorContract.address);
-
+  const txn = await ElevatorContract.exploit();
+  console.log("TXN", txn);
 }
 
 const run = async() => {
