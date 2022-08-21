@@ -15,7 +15,7 @@ const main = async() => {
   await ReentranceContract.deployed();
   console.log(ReentranceContract);
   console.log("Deployed", ReentranceContract);
-  const txn = await ReentranceContract.attack();
+  const txn = await ReentranceContract.attack(ethers.utils.parseEther("0.001"));
   console.log(txn)
 }
 
