@@ -11,7 +11,7 @@ interface IElevator {
 
 abstract contract Building {
 
-  address targetAddress = 0xe18e343288f56C2cBc41F4FFD289dE7C35498Da8;
+  address targetAddress = 0xF012E9fbb8147dbFC9a7e0a337180F2B09a07F58;
   IElevator targetContract;
   constructor() {
     targetContract = IElevator(targetAddress);
